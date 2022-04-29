@@ -39,3 +39,9 @@ to register the app with the admin, add the following line to the admin.py file:
 `admin.site.register(UserProfileManager)`
 
 admin site is available at `{server-url}/admin/`
+
+## ApiViews
+ Using the rest_framework, we can create a api view to handle the requests.
+ the major function of the api view is to handle the requests. namely `get`, `post`, `put`, `delete`, `patch`
+ we can us the import
+    `from rest_framework.views import APIView` to get the base class for the api view
