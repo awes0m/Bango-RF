@@ -28,3 +28,14 @@ AUTH_USER_MODEL = '{app-name}.UserProfileManager'
 ## Migrating the Models to the Database
 `python manage.py makemigrations {app-name}` - this creates a migration file for the app
 `python manage.py migrate` - this migrates the app to the database. ie- creates the tables needed for the project
+
+## create a Superuser
+`python manage.py createsuperuser` - this creates a superuser for the project
+it will ask for the username, email, and password.
+
+## register the app with the admin
+to register the app with the admin, add the following line to the admin.py file:
+`from {app-name}.models import UserProfileManager`
+`admin.site.register(UserProfileManager)`
+
+admin site is available at `{server-url}/admin/`
