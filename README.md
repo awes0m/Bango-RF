@@ -45,3 +45,10 @@ admin site is available at `{server-url}/admin/`
  the major function of the api view is to handle the requests. namely `get`, `post`, `put`, `delete`, `patch`
  we can us the import
     `from rest_framework.views import APIView` to get the base class for the api view
+
+## ViewSets
+the viewset is a class that extends the api view.
+the viewset class is responsible for handling the requests. ie - `'list', 'retrieve', 'create', 'update','partial_update' 'destroy'`
+
+we can use the import 
+      `from rest_framework import viewsets` to get the django rf defined viewset class
